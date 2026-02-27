@@ -39,11 +39,11 @@ EDA was conducted to understand the distribution of variables and uncover patter
 - Medical charges are **right-skewed**, with a small number of very high-cost claims
   <img width="453" alt="dist_of_charges" src="https://github.com/user-attachments/assets/2ba1150d-22d6-417e-8193-cc954a7ba9dc" />
 - The average BMI falls into the **obese** category, indicating elevated health risk
--   <img width="453" alt="dist_of_bmi" src="https://github.com/user-attachments/assets/64b127db-d088-42dc-b55f-1e2727dee682" />
+  <img width="453" alt="dist_of_bmi" src="https://github.com/user-attachments/assets/64b127db-d088-42dc-b55f-1e2727dee682" />
 - The Southeast region shows higher variability in medical costs
--   <img width="453" alt="charges_dis_region" src="https://github.com/user-attachments/assets/f0ed56d9-1ae9-447e-8986-4c4ad204ef36" />
+  <img width="453" alt="charges_dis_region" src="https://github.com/user-attachments/assets/f0ed56d9-1ae9-447e-8986-4c4ad204ef36" />
 - Smokers incur significantly higher charges than non-smokers
--   <img width="453" alt="avg_charges_by_gender" src="https://github.com/user-attachments/assets/11c3fa27-8356-4033-b9ea-5d6bfd56e921" />
+  <img width="453" alt="avg_charges_by_gender" src="https://github.com/user-attachments/assets/11c3fa27-8356-4033-b9ea-5d6bfd56e921" />
 
 Visualizations included:
 - Histograms and KDE plots  
