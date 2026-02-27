@@ -106,3 +106,15 @@ We are 95% confident that the true average medical insurance cost lies within th
 ---
 
 ## 📁 Project Structure
+├── Medical Insurance Cost Analysis Using Exploratory Data Analysis and Statistical Inference.ipynb   # Main Jupyter Notebook with all analysis, EDA, and visualizations
+├── insurance_data.xlsx        # Dataset used for analysis
+└── README.md                  # This README file
+
+---
+
+
+---
+
+## 👤 Author
+**Baasankhuu**  
+Aspiring Data Analyst | Python • Data Visualization • Statistics • SQl • Power BI
