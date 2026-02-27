@@ -32,26 +32,12 @@ The dataset contains **1,338 insurance beneficiaries** and includes the followin
 
 ---
 
-## 🧹 Data Cleaning & Preparation
-Key data preprocessing steps included:
-
-- Corrected misspelled categorical values in the `region` column  
-- Removed rows with missing values (less than 5% of the dataset)  
-- Converted `children` from float to integer  
-- Standardized column naming conventions  
-- Detected and handled outliers using the IQR method  
-  - Implausible values in `children` were removed  
-  - High medical charges and BMI outliers were retained as realistic  
-
-Final dataset size after cleaning: **1,313 records**
-
----
-
 ## 📊 Exploratory Data Analysis (EDA)
 EDA was conducted to understand the distribution of variables and uncover patterns:
 
 ### Key Findings:
-- Medical charges are **right-skewed**, with a small number of very high-cost claims  
+- Medical charges are **right-skewed**, with a small number of very high-cost claims
+  ![BMI vs Charges](images/bmi_vs_charges.png)
 - The average BMI falls into the **obese** category, indicating elevated health risk  
 - The Southeast region shows higher variability in medical costs  
 - Smokers incur significantly higher charges than non-smokers  
@@ -102,16 +88,6 @@ We are 95% confident that the true average medical insurance cost lies within th
 - Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)
 - Jupyter Notebook
 - GitHub (Project documentation & version control)
-
----
-
-## 📁 Project Structure
-├── insurance_analysis.ipynb   # Main Jupyter Notebook with all analysis, EDA, and visualizations
-├── insurance_data.xlsx        # Dataset used for analysis
-└── README.md                  # This README file
-
----
-
 
 ---
 
