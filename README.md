@@ -10,7 +10,6 @@ Instead of treating risk as a flat metric, this project provides a data-driven f
 2.	**Proactive Margin Protection:** Identifying specific high-risk cohorts for targeted, preventative wellness interventions to optimize the company's overall loss ratio.
 
 <img src="images/med_charges.png" width="600">
----
 
 ## The Business Problem
 Traditional insurance pricing often relies on broad demographic buckets (e.g., age and gender). However, this approach fails to capture the nuance of behavioral health risks. The objective of this analysis is to transition from a reactive pricing model to a predictive, behavioral-based pricing strategy by answering: 
@@ -18,7 +17,6 @@ Traditional insurance pricing often relies on broad demographic buckets (e.g., a
 •	What are the most expensive risk profiles in our current portfolio?<br>
 • How can we structurally adjust premiums to reflect true expected medical costs?
 
----
 
 ## Key Financial Drivers & Insights
 Through rigorous Exploratory Data Analysis (EDA) and statistical testing, several critical financial drivers were identified: <br>
@@ -32,7 +30,6 @@ Obese smokers average **~$41,600** in annual claims, whereas obese non-smokers a
 <img src="images/age_charges.png" width="600">
 While medical costs naturally trend upward with age, the baseline cost for a 20-year-old smoker is frequently higher than the baseline cost for a 60-year-old healthy non-smoker. Lifestyle dictates cost far more heavily than age alone.
 
----
 
 ## Strategic Recommendations 
 Based on the data analysis, I recommend the following data-driven business strategies to optimize profit margins and improve risk management:
@@ -51,7 +48,6 @@ Based on the data analysis, I recommend the following data-driven business strat
 **Data Insight:** Adding dependents (from 0 to 3 children) only marginally increases the average medical costs (from ~$12,200 to ~$15,400). It does not exponentially inflate medical risks per household.<br>
 **Recommendation:** The company should design aggressive, flat-rate “Family Bundle” packages for households with 2-3 children. This strategy can be used to capture market share and attract younger, growing families (who generally represent high Customer Lifetime Value – CLV) with minimal additional risk to the overall insurance pool.
 
----
 
 ## Predictive Modeling Application 
 
@@ -65,7 +61,6 @@ Machine Learning & Explainable AI: A Random Forest Regressor (R^2 = 0.83) was tr
 Actuarial Pricing Engine (GLM): To meet insurance regulatory standards, a Generalized Linear Model (Gamma-distributed with Log-link) was deployed. This provided concrete mathematical multipliers (e.g., Smoker Penalty = 3.09x) rather than flat baseline increases.
 
 
----
 
 ## Data & Technical Architecture
 Dataset Overview
@@ -77,7 +72,6 @@ Data Extraction & Integrity Pipeline Real-world data requires a robust, multi-st
 - Imputation: Missing numerical values (e.g., children or bmi) were imputed using group medians to maintain distribution integrity. Missing categorical values were handled using mode imputation.
 - Outlier Strategy: Outliers in medical charges were explicitly retained rather than dropped. In actuarial science, these represent legitimate, catastrophic medical events that are critical to accurately modeling the insurance risk pool.
 
----
 
 ## Tools & Technologies
 **Python** (Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-Learn, SHAP, Statsmodels)
