@@ -19,17 +19,18 @@ Traditional insurance pricing often relies on broad demographic buckets (e.g., a
 
 
 ## Key Financial Drivers & Insights
-Through rigorous Exploratory Data Analysis (EDA) and statistical testing, several critical financial drivers were identified: <br>
-**The Compounding Effect of Smoking and Obesity:** Smoking alone is the largest standalone driver of medical costs. However, when combined with obesity (BMI > 30), the costs become multiplicative. <br>
-<img src="images/split_violin_bmi_smoker.png" width="600">
 
-Obese smokers average **~$41,600** in annual claims, whereas obese non-smokers average only **~$8,800**.
+Through rigorous Exploratory Data Analysis (EDA) and statistical testing, several critical financial drivers were identified. The analysis goes beyond simple averages to uncover the structural dynamics of our risk pool:
 
-**Age vs. Lifestyle:** 
+**1. The Compounding Effect of Smoking and Obesity:** Smoking alone is the largest standalone driver of medical costs. However, when combined with clinical obesity (BMI > 30), the costs become multiplicative, not additive. Obese smokers average **~$41,600** in annual claims, whereas obese non-smokers average only **~$8,800**. This intersection is our biggest margin bleeder.
+ <img src="images/split_violin_bmi_smoker.png" width="600"><br>
+**2. The Pareto Distribution of Risk (Tail Risk):** Medical charges do not follow a normal distribution. A concentrated segment of high-risk individuals (roughly 15% of the portfolio) is responsible for driving over 40% of the total medical payout. This heavily right-skewed distribution highlights the urgent need for targeted risk mitigation rather than portfolio-wide flat rate hikes.
+ <img src="images/dist_of_charges.png" width="600"><br>
+**3. Age vs. Lifestyle (The Baseline Shift):** While medical costs naturally trend upward with age (due to expected biological decline), lifestyle choices dictate the cost baseline far more heavily. The starting cost for a 20-year-old smoker is frequently higher than the baseline cost for a 60-year-old healthy non-smoker.
+<img src="images/age_charges.png" width="600"><br>
+**4. Dependent Cost Elasticity:** Contrary to traditional risk assumptions, adding dependents (from 0 to 3 children) only marginally increases the average medical costs per household (from ~$12,200 to ~$15,400). It does not exponentially inflate medical risks, indicating that growing families are a highly profitable demographic to acquire.
 
-<img src="images/age_charges.png" width="600">
-While medical costs naturally trend upward with age, the baseline cost for a 20-year-old smoker is frequently higher than the baseline cost for a 60-year-old healthy non-smoker. Lifestyle dictates cost far more heavily than age alone.
-
+<img src="images/children_charge.png" width="600"><br>
 
 ## Strategic Recommendations 
 Based on the data analysis, I recommend the following data-driven business strategies to optimize profit margins and improve risk management:
