@@ -47,7 +47,8 @@ Based on the data analysis, I recommend the following data-driven business strat
 3. Optimizing Family Packages for Customer Acquisition:
    
 **Data Insight:** Adding dependents (from 0 to 3 children) only marginally increases the average medical costs (from ~$12,200 to ~$15,400). It does not exponentially inflate medical risks per household.<br>
-**Recommendation:** The company should design aggressive, flat-rate “Family Bundle” packages for households with 2-3 children. This strategy can be used to capture market share and attract younger, growing families (who generally represent high Customer Lifetime Value – CLV) with minimal additional risk to the overall insurance pool.
+**Recommendation:** The company should design aggressive, flat-rate “Family Bundle” packages for households with 2-3 children to capture market share and attract younger, growing families.<br>
+**Risk Caveat (Mitigating Adverse Selection):** While a flat-rate bundle is a powerful marketing tool, offering unlimited dependents at a fixed rate invites "Adverse Selection" (attracting exceptionally high-risk, large families). To protect the portfolio, the bundle must be strictly capped at a maximum of 3 dependents, with standard underwriting multipliers applying to any additional members.
 
 
 ## Predictive Modeling Application 
