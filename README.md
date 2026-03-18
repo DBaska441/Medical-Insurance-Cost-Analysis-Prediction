@@ -24,8 +24,8 @@ Through rigorous Exploratory Data Analysis (EDA) and statistical testing, severa
 
 **1. The Compounding Effect of Smoking and Obesity:** Smoking alone is the largest standalone driver of medical costs. However, when combined with clinical obesity (BMI > 30), the costs become multiplicative, not additive. Obese smokers average **~$41,600** in annual claims, whereas obese non-smokers average only **~$8,800**. This intersection is our biggest margin bleeder.
  <img src="images/split_violin_bmi_smoker.png" width="600"><br>
-**2. The Pareto Distribution of Risk (Tail Risk):** Medical charges do not follow a normal distribution. A concentrated segment of high-risk individuals (roughly 15% of the portfolio) is responsible for driving over 40% of the total medical payout. This heavily right-skewed distribution highlights the urgent need for targeted risk mitigation rather than portfolio-wide flat rate hikes.
- <img src="images/dist_of_charges.png" width="600"><br>
+**2. The "Pareto" Risk Imbalance (10.8% vs 34%):** A concentrated segment of high-risk individuals drives a disproportionate amount of costs. Specifically, the "High-Risk" cohort (individuals who are both smokers and clinically obese) represents only **10.8%** of the customer base, yet consumes a staggering **34.0%** of the total medical payout budget.
+ <img src="images/pareto_imbalance.png" width="600"><br>
 **3. Age vs. Lifestyle (The Baseline Shift):** While medical costs naturally trend upward with age (due to expected biological decline), lifestyle choices dictate the cost baseline far more heavily. The starting cost for a 20-year-old smoker is frequently higher than the baseline cost for a 60-year-old healthy non-smoker.
 <img src="images/age_charges.png" width="600"><br>
 **4. Dependent Cost Elasticity:** Contrary to traditional risk assumptions, adding dependents (from 0 to 3 children) only marginally increases the average medical costs per household (from ~$12,200 to ~$15,400). It does not exponentially inflate medical risks, indicating that growing families are a highly profitable demographic to acquire.
