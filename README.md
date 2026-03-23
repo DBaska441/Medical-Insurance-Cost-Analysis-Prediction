@@ -72,7 +72,7 @@ This plot compares actual and predicted medical charges from the final Random Fo
 
 ### Machine Learning and Explainability
 
-A Random Forest Regressor was trained to estimate expected medical charges, achieving an R² of 0.83 on the test set. To improve interpretability, SHAP values were used to quantify the directional contribution of each feature. The engineered is_high_risk feature emerged as one of the strongest drivers of predicted charges, with a substantial positive effect on expected cost.
+A Random Forest Regressor was trained to estimate expected medical charges, achieving an R² of 0.83 on the test set. To improve interpretability, SHAP values were used to quantify the directional contribution of each feature. The engineered is_high_risk feature emerged as one of the strongest drivers of predicted charges, with a substantial positive effect on expected cost.<br>
 <img src="images/shap_summary_plot.png" width="600">
 
 ### Interpretable Pricing Engine
